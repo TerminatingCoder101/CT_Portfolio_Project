@@ -1,0 +1,7 @@
+{
+  "merton_theta": 0.4999999999999999,
+  "V0_from_improved_pde": -0.524277770190801,
+  "mc_heston_mean_terminal": 1.149730941477173,
+  "mc_heston_mean_utility": -0.40950679919724486,
+  "notebook_path": "/mnt/data/ct_portfolio_project_improved/ct_portfolio_improved_notebook.ipynb"
+}

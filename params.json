@@ -1,0 +1,14 @@
+{
+  "mu": 0.08,
+  "r": 0.05,
+  "sigma": 0.2,
+  "T": 1.0,
+  "X0": 1.0,
+  "gamma": 3.0,
+  "dt_mc": 0.003968253968253968,
+  "n_paths": 10000,
+  "heston_kappa": 2.0,
+  "heston_theta": 0.04,
+  "heston_xi": 0.3,
+  "heston_rho": -0.5
+}
