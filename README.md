@@ -22,11 +22,11 @@ The goal is to compare the efficiency, accuracy, and usability of the approaches
 ### 1. Black–Scholes Model
 
 The derivative price \( V(S, t) \) of a derivative under the **Black–Scholes PDE** is described by:
-$$
+
 \[
 \frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} + r S \frac{\partial V}{\partial S} - rV = 0,
 \]
-$$
+
 where:
 - \( S \) = underlying asset price  
 - \( t \) = time  
@@ -44,25 +44,24 @@ V(S, T) = \max(S - K, 0).
 ### 2. Monte Carlo Simulation
 
 We model the **underlying asset dynamics** by using **Geometric Brownian Motion (GBM):**
-$$
+
 \[
 dS_t = r S_t dt + \sigma S_t dW_t,
 \]
-$$
+
 which has the solution:
-$$
 \[
 S_T = S_0 \exp\left[\left(r - \tfrac{1}{2}\sigma^2\right)T + \sigma W_T\right],
 \]
-$$
 where '''math \( W_T \sim \mathcal{N}(0, T) \).  
 
 The **Monte Carlo price** of a European call is:
-$$
+
+
 \[
 C_0 = e^{-rT} \cdot \mathbb{E}[\max(S_T - K, 0)].
 \]
-$$
+
 ---
 
 ### 3. Finite Difference Method (PDE Solver)
@@ -74,11 +73,11 @@ We discretize the Black–Scholes PDE on a spatial and temporal grid.
 - **Crank–Nicolson Scheme**: Averages explicit and implicit, second-order accurate.  
 
 The basic update formula for grid point \( (i, j) \) is based on the coefficients of the PDE:
-$$
+
 \[
 V^{n+1}_i = a_i V^n_{i-1} + b_i V^n_i + c_i V^n_{i+1},
 \]
-$$
+
 with coefficients depending on \( r, \sigma, S, \Delta t, \Delta S \).  
 
 ---
