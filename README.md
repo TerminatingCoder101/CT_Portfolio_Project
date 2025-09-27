@@ -107,19 +107,15 @@ This shows **excellent agreement** between methods.
 
 ---
 
-### Convergence of Monte Carlo
+### Terminal Wealth: Heston Myopic Strategy
 
-Error decreases as \( \frac{1}{\sqrt{N}} \) with number of paths:
-
-![Monte Carlo Convergence](results/monte_carlo_convergence.png)
+![Monte Carlo Convergence](results/mc_heston_terminal_hist.png)
 
 ---
 
-### PDE Stability & Accuracy
+### Improved PDE
 
-Crank–Nicolson achieves stable, accurate solutions compared to Explicit:
-
-![PDE Stability](results/pde_solutions.png)
+![PDE Stability](results/theta_improved_snapshots.png)
 
 ---
 
